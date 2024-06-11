@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(247, 182, 86);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 30%;
+  position: relative;
+}
+
+.image-container {
+  background-image: url("https://images.unsplash.com/photo-1508768787810-6adc1f613514?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e27f6661df21ed17ab5355b28af8df4e&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 70%;
+}
+
+.buttons {
+  position: absolute;
+  right: -40px;
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.buttons i {
+  color: #8d8d8d;
+}
+
+.buttons .btn-left {
+  display: flex;
+  align-items: flex-end;
+}
+
+.buttons .btn-right {
+  display: flex;
+  align-items: flex-start;
+}
+
+.buttons button {
+  border: none;
+  padding: 15px;
+}
+
+.buttons .btn-left button {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.buttons .btn-right button {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
