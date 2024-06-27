@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0eeee;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.container h1 {
+  font-size: 200px;
+  color: rgba(211, 138, 240, 0.4);
+  margin: 40px 0;
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  margin-bottom: 40px;
+}
+
+.input {
+  border: 0;
+  width: 250px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgba(128, 128, 128, 0.5);
+  font-weight: 600;
+}
+
+.todo-items {
+  width: 100%;
+}
+
+.todo-items .items {
+  background-color: #fff;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.todo-items .items:not(:last-of-type) {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.todo-items .items:first-child {
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.todo-items .items.completed {
+  text-decoration: line-through;
+  color: gray;
+}
